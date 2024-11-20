@@ -1,4 +1,7 @@
-FROM python:3.13.0-alpine3.20
+FROM ubuntu:20.04
+
+RUN apt update & apt upgrade \
+    apt install python3
 
 COPY myapp /
 
