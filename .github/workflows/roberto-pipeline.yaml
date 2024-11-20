@@ -1,0 +1,12 @@
+name: django app deploy's workflow 
+
+on:
+    push:
+        branches: [main]    
+
+job:
+    job_name: django_app_deploys_workflow
+        runs-on: ubuntu-latest
+        steps:
+            - name: clone the code 
+            
