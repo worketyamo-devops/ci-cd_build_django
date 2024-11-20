@@ -18,5 +18,11 @@ WORKDIR /myapp
 # Expose the port Django runs on
 EXPOSE 8000
 
+# Donner les permissions d'exécution
+RUN chmod +x ./entrypoint.sh
+
+# Utiliser le script comme point d'entrée
+ENTRYPOINT ["./entrypoint.sh"]
+
 # Command to start the Django server
 CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
