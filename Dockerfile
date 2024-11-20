@@ -1,7 +1,9 @@
 FROM ubuntu:20.04
 
-RUN apt update & apt upgrade \
-    apt install python3
+RUN apt update && apt upgrade && \
+    apt install -y python3 python3-pip && \
+    pip3 install django
+
 
 COPY myapp /
 
