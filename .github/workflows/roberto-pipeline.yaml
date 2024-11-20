@@ -22,7 +22,7 @@ jobs:
 
 
       - name: push image to Docker Hub
-        run: docker push robertolandry/ci-cd_django_app:latest
+        run: docker push robertolandry/ci-cd_django_app:latest 
 
 
             
